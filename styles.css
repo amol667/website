@@ -4,19 +4,19 @@
    ================================ */
 
 :root {
-    /* Warm, earthy palette with sophistication */
-    --bg-primary: #0d0c0a;
-    --bg-secondary: #161412;
-    --bg-card: #1c1a17;
-    --text-primary: #f5f0e8;
-    --text-secondary: #a89f94;
-    --text-muted: #6b6358;
-    --accent: #d4a574;
-    --accent-hover: #e8c49a;
-    --border: #2a2622;
+    /* Clean, warm light palette */
+    --bg-primary: #faf9f7;
+    --bg-secondary: #f3f1ed;
+    --bg-card: #ffffff;
+    --text-primary: #1a1a1a;
+    --text-secondary: #4a4a4a;
+    --text-muted: #7a7a7a;
+    --accent: #b8860b;
+    --accent-hover: #996f0a;
+    --border: #e5e3df;
     
     /* Typography */
-    --font-serif: 'Instrument Serif', Georgia, serif;
+    --font-heading: 'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif;
     --font-sans: 'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif;
     
     /* Spacing */
@@ -132,17 +132,16 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-family: var(--font-serif);
+    font-family: var(--font-heading);
     font-size: 2rem;
-    color: var(--bg-primary);
-    font-style: italic;
+    font-weight: 500;
+    color: #fff;
 }
 
 .name {
-    font-family: var(--font-serif);
-    font-size: clamp(2.5rem, 8vw, 4rem);
-    font-weight: 400;
-    font-style: italic;
+    font-family: var(--font-heading);
+    font-size: clamp(2.5rem, 8vw, 3.5rem);
+    font-weight: 600;
     color: var(--text-primary);
     line-height: 1.1;
     margin-bottom: var(--space-md);
@@ -191,10 +190,9 @@ a:hover {
 }
 
 .section-title {
-    font-family: var(--font-serif);
-    font-size: 1.5rem;
-    font-weight: 400;
-    font-style: italic;
+    font-family: var(--font-heading);
+    font-size: 1.25rem;
+    font-weight: 500;
     color: var(--text-primary);
     margin-bottom: var(--space-md);
     letter-spacing: -0.01em;
@@ -307,10 +305,9 @@ a:hover {
 }
 
 .offer-item h3 {
-    font-family: var(--font-serif);
-    font-size: 1.125rem;
-    font-weight: 400;
-    font-style: italic;
+    font-family: var(--font-heading);
+    font-size: 1rem;
+    font-weight: 500;
     color: var(--text-primary);
     margin-bottom: var(--space-xs);
 }
@@ -410,5 +407,22 @@ a:hover {
 
 ::-webkit-scrollbar-thumb:hover {
     background: var(--text-muted);
+}
+
+/* Card shadows for light theme */
+.project-item {
+    box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+}
+
+.project-item:hover {
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.offer-item {
+    box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+}
+
+.offer-item:hover {
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
 }
 
